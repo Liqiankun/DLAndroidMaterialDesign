@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             it.setDisplayHomeAsUpEnabled(true)
             it.setHomeAsUpIndicator(R.drawable.ic_menu)
         }
+
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Data Delete", Snackbar.LENGTH_SHORT)
                 .show()
