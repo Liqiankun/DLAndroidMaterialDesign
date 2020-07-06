@@ -20,7 +20,7 @@ class FruitActivity : AppCompatActivity() {
         val fruitName = intent.getStringExtra(FRUIT_NAME) ?: ""
         val fruitImageId = intent.getIntExtra(FRUIT_IMAGE_ID, 0)
 
-        setSupportActionBar(toolbar)
+        setSupportActionBar(toolBar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         collapsingToolbar.title = fruitName
         Glide.with(this).load(fruitImageId).into(fruitImageView)
